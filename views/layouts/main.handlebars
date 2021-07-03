@@ -6,18 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  {{!-- import css file --}}
+  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
 </head>
 
 <body>
   {{!-- nav bar --}}
-  <nav class="navbar navbar-light bg-light">
+  <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
-      <span class="navbar-brand mb-0 h1">Navbar</span>
+      <span class="navbar-brand mb-0 h1"><a href='/'>Movie List</a></span>
     </div>
   </nav>
 
-  {{!-- partial template --}}
+  {{!-- partial template wil replace this part --}}
   {{{ body}}}
+
+  {{!-- import JS --}}
+  <script src="/javascripts/jquery-3.6.0.min.js"></script>
+  <script src="/javascripts/popper.js"></script>
+  <script src="/javascripts/bootstrap.min.js"></script>
 </body>
 
 </html>
